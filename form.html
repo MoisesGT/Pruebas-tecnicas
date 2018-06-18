@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Employement Record</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+
+
+</head>
+
+<body>
+    <form name="form" action="saveData.php" method="POST">
+        <div class="container-fluid">
+            <section class="text-center jumbotron">
+                <h5 class="strong">Employment Record - Employment Details</h6>
+                    <h6>To be completed and retained for each employe </h6>
+            </section>
+            <!-- Employer details -->
+            <section class="well">
+                <label class="text-primary">Employer details</label>
+                <input type="text" class="form-control" placeholder="Registered" name="registered" id="registered">
+                <input type="text" class="form-control" placeholder="Trading name" name="tradingName" id="tradingName">
+                <input type="text" class="form-control" placeholder="ABN" name="ABN" id="ABN">
+            </section>
+
+            <!-- Employee details -->
+            <section class="well">
+                <label class="text-primary">Employe details</label>
+                <input type="text" class="form-control" placeholder="Full name" name="fullName" id="fullName">
+                <input type="text" class="form-control" placeholder="Date of birth *" name="birth" id="birth">
+                <input type="text" class="form-control" placeholder="Phone number (s)*" name="phone" id="phone">
+                <input type="text" class="form-control" placeholder="Addres *" name="addres" id="addres">
+                <input type="text" class="form-control" placeholder="Tax file" name="taxFile" id="taxFile">
+                <input type="text" class="form-control" placeholder="Date employement" name="dateEmploye" id="dateEmploye">
+
+                <label>Employe status</label>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <input type="checkbox" id="ongoing" name="ongoind">
+                        <label for="ongoing">Ongoing</label>
+
+                        <input type="checkbox" id="temporary" name="temporary">
+                        <label for="temporary">Temporary</label>
+                    </div>
+                    <div class="col-xs-12">
+                        <input type="checkbox" id="other1" name="other1">
+                        <label for="other1">Other</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <input type="checkbox" id="full" name="full">
+                        <label for="full">Full-time</label>
+
+                        <input type="checkbox" id="part" name="part">
+                        <label for="part">Part-time</label>
+
+                        <input type="checkbox" id="casual" name="casual">
+                        <label for="casual">Casual</label>
+                    </div>
+                    <div class="col-xs-12">
+                        <input type="checkbox" id="other2" name="other2">
+                        <label for="other2">Other</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+
+                <input type="text" class="form-control" placeholder="Ordinary hour of work* (for part-time or full-time employee )"
+                       name="ordinaryHourWork" id="ordinaryHourWork"  >
+                <input type="text" class="form-control" placeholder="Agree/required method of pay (e. g.)"
+                       name="methodPay" id="methodPay">
+                <input type="text" class="form-control" placeholder="Agree/required pay period (e. g.)"
+                       name="payPeriod" id="payPeriod">
+                <input type="text" class="form-control" placeholder="Agree required pay day (e. g.)"
+                       name="payDay" id="payDay">
+                <input type="text" class="form-control" placeholder="Apprenticeship/Traineeship"
+                       name="Apprenticeship" id="Apprenticeship">
+                <input type="text" class="form-control" placeholder="Name of Award or Agreement that"
+                       name="nameOfAward" id="nameOfAward">
+                <input type="text" class="form-control" placeholder="Clasification/ job title under the"
+                       name="clasification" id="clasification">
+            </section>
+            <div class="text-center col-xs-12 margin-bottom">
+                <button id="singlebutton" name="singlebutton" class="btn btn-primary">Enviar</button>
+            </div>
+
+
+
+        </div>
+    </form>
+
+
+
+</body>
+
+</html>
